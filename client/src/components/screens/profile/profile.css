@@ -1,0 +1,15 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery .item{
+    width: 25%;
+    margin: 15px;
+}
+
+.profile-page{
+    max-width: 850px;
+    margin: 10px auto;
+}

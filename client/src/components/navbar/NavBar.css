@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+/* .NavBar{
+    border-bottom: 1px solid rgb(71, 71, 71) !important;
+    color: white !important;
+    z-index: 1000 !important;
+    position: fixed !important;
+    height: 65px  !important;
+    width: 100%;
+    top:0px;
+    left: 0px;
+  }
+ */
+ nav{
+  background-color : white;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  box-shadow: 0 0 10px #5b5f5f;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  max-width: 1500px;
+}
+
+.nav-logo{
+  color: rgb(0, 0, 0);
+    align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  flex-grow: 1;
+  box-sizing: border-box;
+    font-size: 2.5rem;
+  font-family: 'Grand Hotel', cursive;
+}
+ 
+.nav-menu{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links{
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem 0.5rem;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+.nav-items{
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-items::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.7s ease, bacground-color 0.5s ease;
+}
+
+.nav-items:hover:after{
+  width: 100%;
+  background: #1bb1dc;
+}
+
+.nav-items .active{
+  color: #1bb1dc;
+}
+
+.nav-icon{
+  display: none;
+  margin: 20px;
+}
+
+@media screen and (max-width:960px) {
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color:black;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    position: absolute;
+    top: 4rem;
+    left: -100%;
+    opacity: 1;
+
+  }
+
+  .nav-menu.active{
+   
+    background-color: white;
+    left: 0px;
+    opacity: 1;
+    transition:  all 0.5s ease;
+    z-index: 100000;
+  }
+
+  .nav-icon{
+    display: block;
+    color: rgb(0, 0, 0);
+  }
+  
+}
